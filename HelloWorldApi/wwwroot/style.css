@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.remote-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #000;
+}
+
+.group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button.power {
+    background-color: crimson;
+}
+
+.dpad {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    grid-template-areas:
+        ".    up    ."
+        "left select right"
+        ".   down   .";
+}
+
+.dpad .up    { grid-area: up; }
+.dpad .down  { grid-area: down; }
+.dpad .left  { grid-area: left; }
+.dpad .right { grid-area: right; }
+.dpad .select { grid-area: select; }
+
+.dpad button {
+    font-size: 20px;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Roku Remote</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="remote-container">
+    
+            <!-- Nav buttons (Home, Back, etc.) -->
+            <div class="group">
+                <button onclick="sendKey('Home')"><i class="fas fa-home"></i> Home</button>
+                <button onclick="sendKey('Back')"><i class="fas fa-arrow-left"></i> Back</button>
+            </div>
+    
+            <!-- D-Pad layout -->
+            <div class="dpad">
+                <button class="up" onclick="sendKey('Up')"><i class="fas fa-arrow-up"></i></button>
+                <button class="left" onclick="sendKey('Left')"><i class="fas fa-arrow-left"></i></button>
+                <button class="select" onclick="sendKey('Select')"><i class="fas fa-check"></i></button>
+                <button class="right" onclick="sendKey('Right')"><i class="fas fa-arrow-right"></i></button>
+                <button class="down" onclick="sendKey('Down')"><i class="fas fa-arrow-down"></i></button>
+            </div>
+    
+            <!-- Playback controls -->
+            <div class="group">
+                <button onclick="sendKey('Play')"><i class="fas fa-play"></i></button>
+                <button onclick="sendKey('Pause')"><i class="fas fa-pause"></i></button>
+                <button onclick="sendKey('Stop')"><i class="fas fa-stop"></i></button>
+                <button onclick="sendKey('Rewind')"><i class="fas fa-fast-backward"></i></button>
+                <button onclick="sendKey('FastForward')"><i class="fas fa-fast-forward"></i></button>
+            </div>
+    
+            <!-- Input buttons -->
+            <div class="group">
+                <button onclick="sendKey('InputTuner')"><i class="fas fa-tv"></i> Tuner</button>
+                <button onclick="sendKey('InputHDMI1')"><i class="fas fa-plug"></i> HDMI 1</button>
+                <button onclick="sendKey('InputHDMI2')"><i class="fas fa-plug"></i> HDMI 2</button>
+                <button onclick="sendKey('InputComposite')"><i class="fas fa-video"></i> Composite</button>
+                <button onclick="sendKey('InputComponent')"><i class="fas fa-video"></i> Component</button>
+            </div>
+    
+            <!-- Power -->
+            <div class="group">
+                <button onclick="sendKey('PowerOff')" class="power"><i class="fas fa-power-off"></i> Power</button>
+            </div>
+        </div>
+    
+        <script src="scripts.js"></script>
+    </body>
+    
+</html>
